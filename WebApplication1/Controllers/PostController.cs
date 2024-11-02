@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
+using WebApplication1.Models;
 
 public class PostsController : Controller
 {
@@ -32,7 +33,7 @@ public class PostsController : Controller
     // 게시글 작성 페이지
     public IActionResult Create()
     {
-        return View();
+        return View(); // Create.cshtml 뷰를 반환
     }
 
     // 게시글 작성 처리

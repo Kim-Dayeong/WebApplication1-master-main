@@ -1,5 +1,6 @@
 using System.ComponentModel.DataAnnotations;
-
+namespace WebApplication1.Models
+{
 public class Post
 {
     [Key]
@@ -13,4 +14,5 @@ public class Post
     public string Content { get; set; }
 
     public DateTime CreatedAt { get; set; } = DateTime.Now;
+}
 }
