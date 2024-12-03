@@ -15,7 +15,7 @@ public class PostsController : Controller
     // 게시글 목록 보기
     public async Task<IActionResult> Index()
     {
-        var posts = await _context.Posts.ToListAsync();
+        var posts = await _context.Posts.ToListAsync(); //db에서 게시물 목록 조회 
         return View(posts);
     }
 
